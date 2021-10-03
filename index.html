@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survy form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="grid">
+        <div class="header">
+            <h1 id="title">Survey form</h1>
+            <p id="description">slogan</p>
+        </div>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label><br>
+            <input class="f-input" type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            <label for="email" id="email-label">Email:</label><br>
+            <input class="f-input" type="email" id="email" name="email" placeholder="Enter a valid email" required><br><br>
+            <label for="numbe" id="number-label">Age:<em>(optional)</em></label><br>
+            <input type="number" class="f-input" id="number" name="number" min="0" max="0" placeholder="Age"><br><br>
+            <label for="current-role">Which option best describes your current role?</label><br>
+            <select name="current-role" size="1" id="dropdown">
+                <option disabled selected value>current role</option>
+                <option value="student">Student</option>
+                <option value="full-time">Full time jop</option>
+                <option value="part-time">Part time jop</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <div class="radio">
+                <div>
+            <label for="recomend-us">Do you recomend our site to other?</label><br>
+            </div>
+            <div>
+            <input type="radio" name="recomend-us" id="Definitely" value="Definitely">
+            <label for="Definitely">Definitely</label><br>
+            </div>
+            <div>
+            <input type="radio" name="recomend-us" id="maybe" value="maybe">
+            <label for="maybe">Maybe</label><br>
+            </div>
+            <div>
+            <input type="radio" name="recomend-us" id="no" value="no">
+            <label for="no">No</label><br><br>
+            </div>
+            </div>
+
+            <label for="improve">What you want to see improve?<em>check all apply</em></label><br>
+            <input type="checkbox" name="front-end" id="front-end" value="front end">
+            <label for="front-end">Front End</label><br>
+            <input type="checkbox" name="back-end" id="back-end" value="back end">
+            <label for="back-end">Back End</label><br>
+            <input type="checkbox" name="assistance-improve" id="assistance-improve" value="assistance improve">
+            <label for="assistance-improve">improve assistance</label><br><br>
+    
+            <label for="comment">Comment:</label><br>
+            <textarea name="comment" cols="30" rows="10">Type your comment here....</textarea><br>
+            <button value="submit" id="submit">Submit</button>
+        </form>
+        </div>
+        
+
+    </body>
+</html>

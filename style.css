@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-family: 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgba(0, 0, 0, 0.2)
+    }
+    
+    *{
+        box-sizing: border-box;
+    }
+
+    /*make grid for all page*/
+    .grid{
+        width: 50%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: 15% 85%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        border-top: solid 80px black;
+        border-right: solid 27px black;
+        border-left: solid 27px black;
+        border-bottom: solid 85px black;
+        border-radius: 20px;
+    }
+
+
+    .header{
+        text-align: center;
+        background-color: rgb(100, 100, 150);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    #survey-form{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 10%;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    }
+
+    #survey-form > .f-input, select{
+        width: 80%;
+        height: 4%;
+        margin: 10px;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgba(100, 100, 150, 0.5);
+        font-size: 30px;
+        padding: 30px;
+        border: solid 3px blueviolet;
+        outline: solid 1px black;
+    }
+
+    select{
+        width: 20%;
+    }
+
+    select:active{
+        border-radius: 20px;
+    
+    }
+
+    .radio{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+    }
+    .radio > div{
+        margin: auto;
+        width: 50%;
+    }
+
+    #survey-form > input:hover, select:hover{
+        transform: scale(1.05);
+        transition: 0.5s; 
+        opacity: 0.6;       
+
+    }
